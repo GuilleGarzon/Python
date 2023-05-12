@@ -1,5 +1,5 @@
-# Esto es un comentario:
-# Hola Mundo en Python
+### Esto es un comentario: ###
+### Hola Mundo en Python ###
 
 print('Hola Python')
 print("Hola Python")
