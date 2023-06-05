@@ -1,4 +1,4 @@
-num_lecturas = int(input("  ")) 
+num_lecturas = int(input("Ingrese número de lecturas: ")) 
 #Declarar variables
 contador = 0
 sumamente_apto = 0
@@ -9,8 +9,8 @@ suma_temperatura = 0
 suma_profundidad = 0
 #Crear ciclo
 while contador < num_lecturas:
-    temperaturamedia = float(input(" "))
-    profundidadefectiva = float(input(" "))
+    temperaturamedia = float(input("Ingrese Temperatura media " + str(contador + 1) + ": "))
+    profundidadefectiva = float(input("Ingrese Profundidad efectiva " + str(contador + 1) + ": "))
     if  (76 <= temperaturamedia <= 82)  and (profundidadefectiva > 39.37):
         sumamente_apto += 1
     elif (83 <= temperaturamedia <= 86 or 69 <= temperaturamedia <= 75)  and 19.69 <= profundidadefectiva <= 39.37:
@@ -50,8 +50,8 @@ while contador < num_lecturas:
     contador += 1
 f = "{:.2f}"
 #Salidas    
-print(" ", f.format(suma_temperatura/num_lecturas))
-print(" ", f.format(suma_profundidad/num_lecturas))    
+print("Promedio de temperatura media: ", f.format(suma_temperatura/num_lecturas))
+print("Promedio de profundidad efectiva: ", f.format(suma_profundidad/num_lecturas))    
 print("Sumamente Apto ", sumamente_apto)
 print("Moderadamente Apto ", moderadamente_apto)
 print("Marginalmente Apto ", marginalmente_apto)
